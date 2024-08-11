@@ -6,6 +6,7 @@ const cors = require("cors");
 const authRoutes=require("./routes/authRoute")
 const principalRoute=require("./routes/principalRoute")
 const studentRoute=require("./routes/studentRoute")
+const teacherRoute=require("./routes/teacherRoute")
 dotenv.config();
 app.use(cors());
 app.use(express.json());
@@ -19,6 +20,7 @@ app.get("/test", (req, res) => {
 app.use("/api/auth",authRoutes);
 app.use("/api/principal",principalRoute)
 app.use("/api/student",studentRoute);
+app.use("/api/teacher",teacherRoute);
 
 
 const PORT=5000
