@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const cors = require("cors");
 const authRoutes=require("./routes/authRoute")
+const principalRoute=require("./routes/principalRoute")
 dotenv.config();
 app.use(cors());
 app.use(express.json());
@@ -15,6 +16,7 @@ app.get("/test", (req, res) => {
 });
 
 app.use("/api/auth",authRoutes);
+app.use("/api/principal",principalRoute)
 
 
 const PORT=5000

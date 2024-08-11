@@ -9,7 +9,7 @@ const userSchema = new mongoose.Schema({
     enum: ["Principal", "Teacher", "Student"],
     required: true,
   },
-  classroom: { type: mongoose.Schema.Types.ObjectId, ref: "Classroom" }, // Reference to classroom for Teacher and Student
+  classroom: { type: mongoose.Schema.Types.ObjectId, ref: "Classroom" },
 });
 
 userSchema.pre("save", async function (next) {
