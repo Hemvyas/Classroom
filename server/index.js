@@ -23,7 +23,7 @@ app.use("/api/principal", principalRoute);
 app.use("/api/student", studentRoute);
 app.use("/api/teacher", teacherRoute);
 
-const PORT = process.env.PORT || 5000;
+const PORT = 5000;
 
 mongoose
   .connect(process.env.MONGODB_URI)
