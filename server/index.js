@@ -12,10 +12,10 @@ app.use(cors());
 app.use(express.json());
 
 
-//test route
-app.get("/test", (req, res) => {
-  res.send("Server is working!");
-});
+// //test route
+// app.get("/test", (req, res) => {
+//   res.send("Server is working!");
+// });
 
 app.use("/api/auth",authRoutes);
 app.use("/api/principal",principalRoute)

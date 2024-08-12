@@ -34,7 +34,7 @@ router.post("/assign-students", auth(["Principal"]), assignStudentToClassroom);
 router.post("/assign-student", auth(["Principal"]), assignStudentToTeacher);
 router.get("/getTeachers", getTeachers);
 router.get("/getStudents", getStudents);
-router.get("/allUsers", auth(["Principal"]), getAllUsers);
+router.get("/allUsers", getAllUsers);
 router.get("/:id", getUser);
 router.put("/updateStudent/:studentId", updateStudent);
 router.delete("/delStudents/:studentId", deleteStudent);
