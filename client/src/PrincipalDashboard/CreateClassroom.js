@@ -45,7 +45,7 @@ const CreateClassroom = () => {
         { headers: { Authorization: `Bearer ${token}` } }
       );
       if (response.status === 201) {
-        navigate("-1");
+        navigate(-1);
       }
     } catch (error) {
       setError("Failed to create classroom. Please try again later.");
