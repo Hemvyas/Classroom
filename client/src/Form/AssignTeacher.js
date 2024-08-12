@@ -25,7 +25,7 @@ const AssignTeacher = () => {
     const fetchData = async () => {
       try {
         const teachersResponse = await axios.get(
-          "http://localhost:5000/api/principal/getTeachers",
+          "https://classroom-eta.vercel.app/api/principal/getTeachers",
           {
             headers: { Authorization: `Bearer ${token}` },
           }
