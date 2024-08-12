@@ -40,7 +40,7 @@ const CreateClassroom = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/principal/createClassroom",
+        "https://classroom-eta.vercel.app/api/principal/createClassroom",
         { name, days },
         { headers: { Authorization: `Bearer ${token}` } }
       );

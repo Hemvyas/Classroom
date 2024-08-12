@@ -51,7 +51,7 @@ const AssignTeacher = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/principal/assign-teacher",
+        "https://classroom-eta.vercel.app/api/principal/assign-teacher",
         { teacherId: selectedTeacher, classroomId: selectedClassroom },
         { headers: { Authorization: `Bearer ${token}` } }
       );

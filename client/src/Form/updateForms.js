@@ -42,7 +42,7 @@ const UpdateForm = ({ type }) => {
     e.preventDefault();
     try {
       const updateResponse = await axios.put(
-        `http://localhost:5000/api/principal/update${type}/${id}`,
+        `https://classroom-eta.vercel.app/api/principal/update${type}/${id}`,
         { name, email },
         { headers: { Authorization: `Bearer ${token}` } }
       );

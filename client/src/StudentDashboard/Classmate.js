@@ -22,7 +22,7 @@ const ViewClassmates = () => {
     const fetchClassmates = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5000/api/student/classmates/${id}`,
+          `https://classroom-eta.vercel.app/api/student/classmates/${id}`,
           {
             headers: { Authorization: `Bearer ${token}` },
           }

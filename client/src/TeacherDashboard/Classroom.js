@@ -27,7 +27,7 @@ const ViewStudents = () => {
     const fetchStudents = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5000/api/teacher/classroom/${id}`,
+          `https://classroom-eta.vercel.app/api/teacher/classroom/${id}`,
           {
             headers: { Authorization: `Bearer ${token}` },
           }
@@ -47,7 +47,7 @@ const ViewStudents = () => {
   const handleDelete = async (studentId) => {
     try {
       await axios.delete(
-        `http://localhost:5000/api/principal/delStudents/${studentId}`,
+        `https://classroom-eta.vercel.app/api/principal/delStudents/${studentId}`,
         {
           headers: { Authorization: `Bearer ${token}` },
         }
