@@ -33,7 +33,7 @@ const AssignTeacher = () => {
         setTeachers(teachersResponse.data);
 
         const classroomResponse = await axios.get(
-          "http://localhost:5000/api/principal/getClassroom",
+          "https://classroom-eta.vercel.app/api/principal/getClassroom",
           {
             headers: { Authorization: `Bearer ${token}` },
           }
