@@ -13,10 +13,10 @@ dotenv.config();
 app.use(cors());
 app.use(express.json());
 
-// Test route
-app.get("/api/test", (req, res) => {
-  res.send("Server is working!");
-});
+// // Test route
+// app.get("/api/test", (req, res) => {
+//   res.send("Server is working!");
+// });
 
 app.use("/api/auth", authRoutes);
 app.use("/api/principal", principalRoute);
