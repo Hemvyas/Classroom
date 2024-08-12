@@ -1,4 +1,3 @@
-const Classroom = require("../models/Classroom");
 const User=require("../models/User")
 
 exports.getStudents=async(req,res)=>{

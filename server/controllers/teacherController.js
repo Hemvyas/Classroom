@@ -21,7 +21,7 @@ exports.getStudentsInClassroom = async (req, res) => {
     const students = await User.find({
       classroom: teacher.classroom._id,
       role: "Student",
-    });
+    })
     res.status(200).json({ students });
   } catch (error) {
     res.status(500).json({ error: error.message });

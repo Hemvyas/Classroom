@@ -37,7 +37,9 @@ exports.login=async(req,res)=>{
             process.env.secretkey,
             {expiresIn:"1d"}
         )
-         res.status(200).json({ token });
+        const id=user._id;
+        const role=user.role;
+         res.status(200).json({ token, id, role });
     } catch (error) {
        res.status(500).json({ error: error.message }); 
     }
