@@ -55,9 +55,9 @@ const AssignTeacher = () => {
         { teacherId: selectedTeacher, classroomId: selectedClassroom },
         { headers: { Authorization: `Bearer ${token}` } }
       );
-      // if (response.status === 200) {
-      //   navigate("/");
-      // }
+      if (response.status === 200) {
+        navigate("-1");
+      }
     } catch (error) {
       setError("Failed to assign teacher. Please try again later.");
       console.error("Error assigning teacher:", error);
