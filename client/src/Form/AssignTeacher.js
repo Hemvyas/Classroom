@@ -56,7 +56,7 @@ const AssignTeacher = () => {
         { headers: { Authorization: `Bearer ${token}` } }
       );
       if (response.status === 200) {
-        navigate(-1);
+        navigate("/principal/assign-teacher");
       }
     } catch (error) {
       setError("Failed to assign teacher. Please try again later.");
