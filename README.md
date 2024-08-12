@@ -1,34 +1,24 @@
 # Classroom
  
-Clone the repository:
+# Clone the repository:
 
-bash
-Copy code
 git clone https://github.com/Hemvyas/Classroom.git
 cd Classroom
-Install dependencies for the client:
 
-bash
-Copy code
+# Install dependencies for the client:
 cd client
 npm install
-Install dependencies for the server:
 
-bash
-Copy code
+# Install dependencies for the server:
 cd ../server
 npm install
-Running the Project
-Start the client:
 
-bash
-Copy code
+# Running the Project
+# Start the client:
 cd client
 npm start
-Start the server:
 
-bash
-Copy code
+# Start the server:
 cd ../server
 npm start
 
